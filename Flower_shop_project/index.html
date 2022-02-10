@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cvecara</title>
+    <style>
+        h1{
+            color:purple;
+        }
+    </style>
+</head>
+<body>
+<form>
+
+    <div class="row">
+        <h1>Odaberite cvece: </h1>
+    </div>
+
+    <div class="row">
+        <input type="number" placeholder="Cena po cvetu je 150 din." id="ruze"> Ruze
+    </div>
+
+    <div class="row">
+        <input type="number" placeholder="Cena po cvetu je 120 din." id="ljiljani"> Ljiljani
+    </div>
+
+    <div class="row">
+        <input type="number" placeholder="Cena po cvetu je 70 din." id="gerberi"> Gerberi
+    </div>
+
+    <div class="row">
+        <h1>Dodatni pokloni:</h1>
+    </div>
+
+    <div class="row">
+        <input type="checkbox" id="bombonjera">
+        <label for="">Bombonjera</label>
+    </div>
+
+    <div class="row">
+        <input type="checkbox" id="cokolada">
+        <label for="">Cokolada</label>
+    </div>
+
+    <div class="row">
+        <input type="checkbox" id="sampanjac">
+        <label for="">Sampanjac</label>
+    </div>
+
+    <div class="row">
+        <h1>Placanje:</h1>
+    </div>
+
+    <div class="row">
+        <input type="radio" id="kes" name="radio" value="kes">
+        <label for="kes">Kes</label>
+    </div>
+
+    <div class="row">
+        <input type="radio" id="kartica" name="radio" value="kartica">
+        <label for="kartica">Kartica</label>
+    </div>
+
+    <div class="row">
+        <input type="button" name="" value="Izracunaj" id="racunaj">
+        <input type="reset" name="" value="Resetuj" id="resetuj">
+    </div>
+
+    <div id="ispis">
+
+    </div>
+
+</form>
+    <script src="script.js"></script>
+</body>
+</html>
