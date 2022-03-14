@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import axios from "axios";
 
 const Api = ({ children }) => {
   const [todos, setTodos] = useState([]);
 
   const callAPI = () => {
-    fetch("http://localhost:9000/testAPI")
-      .then((res) => res.text())
-      .then((res) => setTodos(res));
+    axios.get("http://localhost:9001/testAPI").then((res) => {
+      console.log(res.data);
+      const todo = res.data;
+      setTodos(todo);
+    });
   };
 
   useEffect(() => {

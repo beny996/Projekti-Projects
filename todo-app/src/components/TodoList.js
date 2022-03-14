@@ -8,7 +8,7 @@ const TodoList = () => {
     <ul>
       {todos.length
         ? todos.map((todo) => <TodoLlistItem key={todo.id} todo={todo} />)
-        : "You are finished with your todo list. Congratz!"}
+        : "You have finished all your tasks!"}
     </ul>
   );
 };
